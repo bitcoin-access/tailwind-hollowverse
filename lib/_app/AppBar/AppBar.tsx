@@ -9,7 +9,7 @@ import Image from 'next/image';
 import { Icon } from '~/lib/components/Icon';
 import SearchIcon from '~/public/images/icons/search-regular.svg';
 import TimesIcon from '~/public/images/icons/times-regular.svg';
-import s from './AppBar.module.scss';
+import s from './styles.module.scss';
 import Link from 'next/link';
 
 export const AppBar = () => {
@@ -22,7 +22,7 @@ export const AppBar = () => {
       position="static"
       className={s.AppBar}
     >
-      <Container maxWidth="md" className={s.container}>
+      <Container maxWidth="sm" className={s.container}>
         <div className={s.logo}>
           <div style={{ display: showSearch ? 'block' : 'none' }}>
             <div title="Google search results" className="gcse-search" />
