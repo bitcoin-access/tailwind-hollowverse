@@ -49,22 +49,6 @@ export const Footer = () => {
                   .
                 </>,
               ],
-              [
-                GiftIcon,
-                <>Copyrights</>,
-                <>
-                  We reserve none. Everything here is free, including{' '}
-                  <Link
-                    href="https://github.com/hollowverse/"
-                    target="_blank"
-                    color="inherit"
-                    rel="noopener"
-                  >
-                    the code
-                  </Link>
-                  .
-                </>,
-              ],
             ] as const
           ).map(([IconComponent, title, text], i) => {
             return (
