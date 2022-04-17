@@ -13,7 +13,7 @@ export const Footer = () => {
     <footer className={s.Footer}>
       <Separator />
 
-      <Container maxWidth="md" className={s.content}>
+      <Container maxWidth="sm" className={s.content}>
         <div className={s.image}>
           <Image
             width={50}

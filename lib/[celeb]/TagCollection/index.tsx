@@ -7,7 +7,7 @@ export const TagCollection = () => {
   const tags = useCelebContext().celeb.tags!;
 
   return (
-    <Container maxWidth="md" className={s.TagCollection}>
+    <Container maxWidth="sm" className={s.TagCollection}>
       <Container>
         {tags.regular.map((t) => (
           <Chip

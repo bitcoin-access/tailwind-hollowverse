@@ -22,7 +22,7 @@ export const Contribute = () => {
         <meta name="robots" content="noindex" />
       </Head>
 
-      <Container className={s.Contribute} maxWidth="md">
+      <Container className={s.Contribute} maxWidth="sm">
         <Typography variant="h1">Add to {name}&apos;s page</Typography>
 
         <Typography>

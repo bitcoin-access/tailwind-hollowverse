@@ -12,7 +12,7 @@ export const Index = (p: any) => {
         <div className={s.fancyBackground} />
       </div>
 
-      <Container className={s.Index} maxWidth="md">
+      <Container className={s.Index} maxWidth="sm">
         <Typography variant="h1" fontWeight={400}>
           Top 100 celebs
         </Typography>

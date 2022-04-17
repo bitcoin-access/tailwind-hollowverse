@@ -13,7 +13,7 @@ export const Sources = (p: {
   const oldContent = context.celeb.oldContent!;
 
   return (
-    <Container maxWidth="md" component="section" className={s.Sources}>
+    <Container maxWidth="sm" component="section" className={s.Sources}>
       <Button
         color="inherit"
         variant="text"

@@ -13,7 +13,7 @@ export const InterestingProfiles = () => {
     <div className={s.InterestingProfiles}>
       <Separator title="Other interesting profiles" />
 
-      <Container maxWidth="md">
+      <Container maxWidth="sm">
         <CelebGallery celebGalleryItems={relatedPeople} />
       </Container>
     </div>

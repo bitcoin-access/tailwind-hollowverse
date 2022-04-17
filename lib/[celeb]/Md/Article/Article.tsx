@@ -24,7 +24,7 @@ export const Article = (p: {
       {oldContent.summaries && (
         <div>
           <Separator title="Summary" />
-          <Container maxWidth="md">
+          <Container maxWidth="sm">
             <p>{oldContent.summaries.religion}</p>
             <p>{oldContent.summaries.politicalViews}</p>
           </Container>
@@ -33,7 +33,7 @@ export const Article = (p: {
 
       <div className={s.contributePromo}>
         <Separator title="Hi! 👋 Do you think a lot about politics and religion? 🧠" />
-        <Container maxWidth="md" className={s.contributePromoContent}>
+        <Container maxWidth="sm" className={s.contributePromoContent}>
           <div className={s.contributePromoText}>
             <p>
               Receive a $25 Amazon® gift card by becoming a top contributor on
@@ -66,7 +66,7 @@ export const Article = (p: {
 
       <Separator title="Editorial" />
       <Container
-        maxWidth="md"
+        maxWidth="sm"
         dangerouslySetInnerHTML={{ __html: oldContent.article }}
       />
     </article>

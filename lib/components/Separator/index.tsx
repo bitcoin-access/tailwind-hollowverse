@@ -12,7 +12,7 @@ export const Separator: React.FC<{
 
   return (
     <Container
-      maxWidth="md"
+      maxWidth="sm"
       disableGutters
       className={clsx(s.Separator, p.className, minor ? s.minor : s.major)}
     >

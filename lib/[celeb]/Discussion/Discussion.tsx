@@ -27,7 +27,7 @@ export const Discussion = () => {
       <Separator title="Discussion" />
 
       <Container
-        maxWidth="md"
+        maxWidth="sm"
         className={s.element}
         id="discourse-comments"
         title="Comments"

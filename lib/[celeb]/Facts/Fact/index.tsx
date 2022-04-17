@@ -11,7 +11,7 @@ export const Fact: React.FC<{ value: TFact }> = ({ value }) => {
   } = useCelebContext();
 
   return (
-    <Container maxWidth="md" className={s.Fact}>
+    <Container maxWidth="sm" className={s.Fact}>
       <div className={s.header}>
         <Typography>{value.date}</Typography>
       </div>

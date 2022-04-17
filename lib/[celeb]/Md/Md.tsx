@@ -13,7 +13,7 @@ export const Md = () => {
   return (
     <section>
       {(oldContent.article && <Article setShowSources={setShowSources} />) || (
-        <Container maxWidth="md" style={{ marginTop: 40, marginBottom: 40 }}>
+        <Container maxWidth="sm" style={{ marginTop: 40, marginBottom: 40 }}>
           <Typography variant="h4" component="p">
             Share what you know about {context.celeb.name} in the{' '}
             <Link href="#discussion">discussion forum</Link> below!
