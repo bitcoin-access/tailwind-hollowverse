@@ -22,13 +22,16 @@ export const AppBar = () => {
       position="static"
       className={s.AppBar}
     >
-      <Container maxWidth="sm" className={s.container}>
+      <Container maxWidth="sm" className={s.container} disableGutters>
         <div className={s.logo}>
           <div style={{ display: showSearch ? 'block' : 'none' }}>
             <div title="Google search results" className="gcse-search" />
           </div>
 
-          <div style={{ display: showSearch ? 'none' : 'block' }}>
+          <div
+            style={{ display: showSearch ? 'none' : 'block' }}
+            className={s.image}
+          >
             <Link passHref href="/">
               <a>
                 <Image
@@ -37,9 +40,6 @@ export const AppBar = () => {
                   height={30}
                   alt="Hollowverse"
                 />
-                <Typography variant="body2" className={s.subtitle}>
-                  Important people and facts
-                </Typography>
               </a>
             </Link>
           </div>

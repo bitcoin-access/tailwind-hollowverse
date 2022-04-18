@@ -7,34 +7,34 @@ import s from './TopSection.module.scss';
 
 export const TopSection = () => {
   const context = useCelebContext();
-
   const picture = context.celeb.picture || context.placeholderImage;
 
   return (
-    <div className={s.TopSection}>
-      <section className={s.fancyBackground}>
-        <header className={s.header}>
-          <div className={s.imageContainer}>
-            <Image
-              className={s.image}
-              blurDataURL={picture.metadata.lqip}
-              placeholder="blur"
-              src={sanityImage(picture).width(200).height(250).url()}
-              width={200}
-              height={250}
-              priority
-              alt={context.celeb.name}
-            />
-          </div>
+    <Container maxWidth="sm" className={s.TopSection}>
+      <div className={s.imageContainer}>
+        <Image
+          className={s.image}
+          layout="fill"
+          width={2224}
+          height={1848}
+          objectFit="cover"
+          objectPosition="top right"
+          blurDataURL={picture.metadata.lqip}
+          placeholder="blur"
+          src="/images/elon-musk2.jpeg"
+          priority
+          alt={context.celeb.name}
+        />
+      </div>
 
-          <Typography variant="h1" className={s.title}>
-            <span className={s.titleLessEmphasized}>
-              Religion, politics, and ideas of
-            </span>
-            <br /> <span className={s.name}>{context.celeb.name}</span>
-          </Typography>
-        </header>
-      </section>
-    </div>
+      <div className={s.contentContainer}>
+        <Typography variant="h1" className={s.title}>
+          <span className={s.titleLessEmphasized}>
+            Religion, politics, and ideas of
+          </span>
+          <br /> <span className={s.name}>{context.celeb.name}</span>
+        </Typography>
+      </div>
+    </Container>
   );
 };

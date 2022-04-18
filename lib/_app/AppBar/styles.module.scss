@@ -2,7 +2,6 @@
 
 .AppBar {
   display: flex;
-  // position: relative;
   position: absolute;
   justify-content: center;
   z-index: 2;
@@ -21,8 +20,10 @@
         text-decoration: none;
       }
 
-      .subtitle {
-        color: $lessEmphasis;
+      .image {
+        width: fit-content;
+        padding: $s2;
+        background-color: #00000021;
       }
     }
 
