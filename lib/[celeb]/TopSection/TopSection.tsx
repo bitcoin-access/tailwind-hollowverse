@@ -1,4 +1,4 @@
-import { Container, Typography } from '@mui/material';
+import { Box, Container, Typography } from '@mui/material';
 import Image from 'next/image';
 import React from 'react';
 import { sanityImage } from '~/lib/components/sanityio';

@@ -1,22 +1,24 @@
 @import '~lib/components/common.scss';
 
 .TagCollection {
-  width: 90%;
-  margin-top: $s8;
-  text-align: center;
+  margin-top: $s2;
 
-  .tag {
-    margin: $s1;
+  .tagsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    // margin-left: -$s1;
+
+    .tag,.maybe {
+      margin: $s1;
+      padding: $s1 $s2;
+    }
+
+    .tag {
+      background-color: rgba(0, 0, 0, 0.141);
+    }
   }
 
   .lowConfidence {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-top: $s4;
-
-    &, .tag {
-      color: $lessEmphasis;
-    }
   }
 }

@@ -2,42 +2,34 @@ import { Chip, Container, Typography } from '@mui/material';
 import React from 'react';
 import { useCelebContext } from '~/lib/components/StaticPropsContextProvider';
 import s from './styles.module.scss';
+import clsx from 'clsx';
+import { Box } from '@mui/system';
 
 export const TagCollection = () => {
   const tags = useCelebContext().celeb.tags!;
 
   return (
-    <Container maxWidth="sm" className={s.TagCollection}>
-      <Container>
+    <Container maxWidth="sm" className={s.TagCollection} disableGutters>
+      <div className={s.tagsContainer}>
         {tags.regular.map((t) => (
-          <Chip
-            key={t.tag.name}
-            label={t.tag.name}
-            className={s.tag}
-            variant="outlined"
-          />
+          <Box key={t.tag.name} sx={{ boxShadow: 1 }} className={s.tag}>
+            <Typography variant="body1">{t.tag.name}</Typography>
+          </Box>
         ))}
-      </Container>
+      </div>
 
       {tags.lowConfidence.length > 0 && (
-        <Container className={s.lowConfidence}>
-          <Typography
-            component="p"
-            variant="h3"
-            className={s.tag}
-            display="inline"
-          >
+        <div className={clsx(s.lowConfidence, s.tagsContainer)}>
+          <Typography component="p" variant="h3" className={s.maybe}>
             Maybe
           </Typography>
+
           {tags.lowConfidence.map((t) => (
-            <Chip
-              key={t.tag.name}
-              label={t.tag.name}
-              className={s.tag}
-              variant="outlined"
-            />
+            <Box key={t.tag.name} sx={{ boxShadow: 1 }} className={s.tag}>
+              <Typography variant="body1">{t.tag.name}</Typography>
+            </Box>
           ))}
-        </Container>
+        </div>
       )}
     </Container>
   );
