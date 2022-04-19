@@ -21,7 +21,7 @@ export const TagCollection = () => {
       {tags.lowConfidence.length > 0 && (
         <div className={clsx(s.lowConfidence, s.tagsContainer)}>
           <Typography component="p" variant="h3" className={s.maybe}>
-            Maybe
+            Maybe?
           </Typography>
 
           {tags.lowConfidence.map((t) => (
